@@ -1,0 +1,30 @@
+.team-member {
+    display: flex;
+   
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.team-member:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.team-member img {
+    
+    width: 300px;
+    height: 250px;
+   border-radius: 5%;
+}
+.profile {
+    
+    padding: 20px;
+    width: 66.67%;
+}
+h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+p {
+    margin: 5px 0;
+}

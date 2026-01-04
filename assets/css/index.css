@@ -1,0 +1,212 @@
+.contaner {
+  padding: 10px 9%;
+  display: flex;
+}
+.contaner .box-container {
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
+
+.contaner .box-container img {
+  height: 150px;
+}
+.contaner .box-container .box {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  width: 350px;
+}
+.contaner .box-container .box p {
+  color: #777;
+  font-family: 15px;
+  line-height: 1.8;
+}
+.contaner .box-container .box .btn {
+  margin-top: 10px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 8px 25px;
+}
+.contaner .box-container .box .btn:hover {
+  letter-spacing: 1px;
+}
+.contaner .box-container .box:hover {
+  box-shadow: 0 10px 15px rgb(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+  .contaner {
+    padding: 20px;
+  }
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+  color: #c14242;
+}
+.faq-container {
+  max-width: 850px;
+  margin: auto;
+  padding: 20px;
+}
+.faq {
+  margin: 10px 0;
+  padding: 10px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq h2 {
+  margin: 0;
+  font-size: 18px;
+}
+.answer {
+  display: none;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.toggle-icon {
+  font-size: 20px;
+}
+hr {
+  border: 1px solid #e0e0e0;
+  margin: 10px 0;
+}
+
+.left {
+  flex: 1;
+  position: absolute; /* Make the left section absolute */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevents overflow */
+  height: 400px; /* Ensure it occupies full height without resizing */
+}
+
+.left img {
+  max-width: 100%;
+  max-height: 100%; /* Ensures the image fits within the fixed height */
+  object-fit: cover;
+}
+.right {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: auto; /* Allows scrolling if content exceeds height */
+  margin-left: 50%; /* Adjust margin to allow space for the left image */
+  position: relative; /* Ensure right section is positioned correctly */
+}
+.faq-item {
+  margin: 15px 0; /* Increased space between questions */
+  cursor: pointer;
+  font-size: 1.2em; /* Larger font size for questions */
+}
+.faq-answer {
+  display: none;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #e2e2e2;
+  border-radius: 5px; /* Rounded corners for answers */
+}
+.faq-item span {
+  color: #0056b3; /* Color for the plus/minus sign */
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #ccc; /* Color of the horizontal line */
+  margin: 15px 0; /* Spacing around the line */
+}
+.image-row {
+  display: flex;
+  justify-content: space-around;
+}
+.image-row img {
+  height: auto;
+}
+.pillar {
+  width: 30%;
+}
+.pillar img {
+  width: 30%;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.grid {
+  width: 27%;
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  background-color: white;
+}
+.slideshow {
+  display: block;
+  width: 100%;
+  height: 320px;
+  position: relative;
+}
+.slideshow img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.slideshow img.active {
+  opacity: 1;
+}
+.year {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+.slide img {
+  border-radius: 50%;
+  width: 190px;
+  height: 160px;
+  margin-bottom: 20px;
+}
+.cta {
+  text-align: center;
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .slide {
+    padding: 10px;
+  }
+}

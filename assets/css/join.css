@@ -1,0 +1,298 @@
+      /* ================= HERO SECTION ================= */
+
+.hero-section {
+  width: 100%;
+  position: relative;
+  margin-top: 80px; /* fixed navbar spacing */
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+}
+
+/* Hero image */
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* THIS makes it fit perfectly */
+  object-position: center;
+}
+
+/* Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+
+/* Text content */
+.hero-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 18px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+  .hero-image {
+    height: 420px;
+  }
+
+  .hero-content h1 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-image {
+    height: 320px;
+  }
+
+  .hero-content h1 {
+    font-size: 8px;
+  }
+
+  
+}
+
+@media (max-width: 480px) {
+  .hero-image {
+    height: 260px;
+  }
+
+  .hero-content h1 {
+    font-size: 22px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+}
+
+
+/* HERO SECTION */
+.membership-hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 8%;
+  align-items: center;
+  gap: 40px;
+}
+
+ 
+
+.content {
+  flex: 1;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;    
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 42px;
+  color: #4a3b57;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.price-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  max-width: 360px;
+}
+
+.price-card h2 {
+  font-size: 36px;
+  color: #e07a8c;
+  margin-bottom: 15px;
+}
+
+.price-card ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.price-card li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.cta-btn {
+  background: linear-gradient(135deg, #e07a8c, #f4a6b8);
+  border: none;
+  padding: 14px 20px;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 30px;
+}
+
+/* DETAILS SECTION */
+.membership-details {
+  padding: 60px 8%;
+}
+
+.membership-details h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #4a3b57;
+  margin-bottom: 40px;
+}
+
+/* ACCORDION */
+.accordion {
+  max-width: 800px;
+  margin: auto;
+}
+
+.accordion-item {
+  background: #ffffff;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion-header .icon {
+  font-size: 24px;
+  color: #e07a8c;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 20px;
+}
+
+.accordion-content p {
+  padding: 15px 0 25px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .membership-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .price-card {
+    margin: auto;
+  }
+}
+
+
+  /* Add basic styling */
+
+  .event {
+    border: 1px solid #ccc;
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .event-date {
+    background-color: #8d9c9d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .event-date .date {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .event-date .month-year {
+    font-size: 14px;
+  }
+
+  .event-info {
+    padding: 20px;
+    flex-grow: 1;
+  }
+
+  .event-info h3 {
+    margin-top: 0;
+  }
+
+  .event-info p {
+    margin-bottom: 10px;
+  }
+
+  .event-info button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
